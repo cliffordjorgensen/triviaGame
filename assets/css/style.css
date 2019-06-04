@@ -1,0 +1,10 @@
+body, 
+html {
+	min-height: 100%;
+}
+
+body {
+	background-image: url();
+	background-size:cover;
+	background-repeat: no-repeat;
+}
