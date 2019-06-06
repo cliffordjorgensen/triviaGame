@@ -1,43 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <html lang="en">
 
-        <head>
-            <title>Movie Quotes</title>
-            <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-            <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-                integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-                crossorigin="anonymous">
-            <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-                crossorigin="anonymous"></script>
+<html lang="en-us">
 
-            <script type="text/javascript" src="assets/javascript/app.js"></script>
-        </head>
+    <head>
+        <meta charset="UTF-8">
+        <title>TRIVIA</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+    </head>
 
-        <body>
-            <div class="page-header">
-                <h1>Who said it?</h1>
-                <h3>Match the Movie Quote to the correct Movie</h3>
-                <div id="wrapper">
-                    <div id="counter-number">You have: 60 seconds to complete quiz</div> <br>
-                    <div id="display">00:00</div><br>
-                    <div id="buttons">
-                        <div id="panel">
-                            <button id="start">Start Game</button>
-                            <button id="start-over">Reset Game</button>
-                        </div>
-                        <div id="endGame">
-                            <div id="done">
-                                <h2>Game Over!!</h2>
-                            </div>
-                            <div id="unanswered"> Unanswered:0</div>
-                            <div id="incorrect"> Incorrect answers:0</div>
-                            <div id="correct">Correct answers:0</div>
-                        </div>
+    <body>
 
-        </body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center main">
+                    <h1 id="mainhead">MOVIE QUOTES</h1>
+                    <h3>Match the movie quote to the corresponding movie</h3>
+                </div>
+            </div>
+            <div class="row" id="mainarea">
+                <div class="col-md-6 col-md-offset-3 text-center clockbox">
+                    <div>Time Left:<span id="clockdisplay"> 30 </span>Seconds</div>
+                </div>
+                <div class="col-md-6 col-md-offset-3 text-center qbox">
+                    <span id="showRightWrong"></span>
+                    <br>
+                    <p class="text-uppercase">
+                        <span id="b0"></span>
+                    </p>
+                    <br>
+                </div>
+                <div class="col-md-6 col-md-offset-3 text-center" id="quizface">
+                    <button type="button" class="btn btn-info btn-lg btn-block choicebtn" value="1"><span
+                            id="b1"></span></button>
+                    <button type="button" class="btn btn-info btn-lg btn-block choicebtn" value="2"><span
+                            id="b2"></span></button>
+                    <button type="button" class="btn btn-info btn-lg btn-block choicebtn" value="3"><span
+                            id="b3"></span></button>
+                    <button type="button" class="btn btn-info btn-lg btn-block choicebtn" value="4"><span
+                            id="b4"></span></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center bigshow">
+                    <button type="button" class="btn btn-success btn-lg btn-block" id=firststart>
+                        <h2>START</h2>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <div id="reviewboard"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3" id="scoreboard">
+                    <p>YOUR FINAL RESULTS:</p>
+                    <p>WINS: <span id="winscore"></span></p>
+                    <p>LOST: <span id="lossscore"></span></p>
+                </div>
+            </div>
+        </div>
 
-    </html>
+
+    </body>
+
+</html>

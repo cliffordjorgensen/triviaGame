@@ -1,10 +1,72 @@
-body, 
-html {
-	min-height: 100%;
+html { 
+	max-height: 100%;
+ 	background-color:burlywood;
+}
+.container {
+	height: max-content;
+	background-color: thistle;
 }
 
-body {
-	background-image: url();
-	background-size:cover;
-	background-repeat: no-repeat;
+#mainhead {
+  font-size: 42pt;
+  color: darkslategrey;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main h3 {
+  color: darkcyan;
+  font-style: italic;
+  font-weight: bolder;
+
+}
+
+#quizface, #scoreboard, #mainarea, #reviewboard, #showRightWrong  {
+  display: none;
+}
+
+#clockdisplay {
+  font-family: monospace;
+  font-size: 34pt;
+  color: green;
+  text-align: center;
+  background: black;
+}
+
+.clockbox {
+  background: black;
+  color: white;
+  font-size: 20pt;
+  border-style: solid;
+  border-width: 20px;
+  border-radius: 25%;
+}
+
+.qbox {
+  background-color: black;
+  color: lightblue;
+  font-size: 20pt;
+}
+
+#showRightWrong {
+  color: gold;
+  font-size: 30pt;
+}
+
+#b0 {
+  font-size: 24pt;
+  font-style: italic;
+}
+#quizface button {
+  color: black;
+  font-size: 20pt;
+  font-weight: bold; 
+}
+
+#scoreboard {
+  background-color: lightgreen;
+  color: black;
+  border-style: solid;
+  border-width: 2px;
+  font-size: 20pt;
+
 }
